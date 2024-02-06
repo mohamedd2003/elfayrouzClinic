@@ -56,7 +56,7 @@ export default function MyForm() {
       onSubmit={sendEmail}
     >
       {({ isSubmitting, isValid }) => (
-        <form className='w-75 m-auto'>
+        <Form className='w-75 m-auto'>
           <div className="form-group">
             <label htmlFor="name">Name</label>
             <Field type="text" name="name" className="form-control" />
@@ -81,7 +81,7 @@ export default function MyForm() {
             {isSubmitting ? 'Sending...' : 'Send'}
           </button>
           {emailSent && <AnimatedBox onClose={() => setEmailSent(false)} />}
-        </form>
+        </Form>
       )}
     </Formik>
   );
