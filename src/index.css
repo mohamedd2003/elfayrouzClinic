@@ -1,0 +1,375 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root{
+  --maincolor:rgba(68, 158, 196,1)
+}
+.main-color{
+  color:var(--maincolor) !important;
+}
+
+#home{
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+video
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
+  object-fit: cover  ;
+  scale: 0.8;
+transition: all 1s;
+
+}
+#home:hover video
+{
+transition: all 2s;
+  scale: 1;
+  
+}
+*::-webkit-media-controls-panel {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+/* Old shadow dom for play button */
+
+*::-webkit-media-controls-play-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+/* New shadow dom for play button */
+
+/* This one works! */
+
+*::-webkit-media-controls-start-playback-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+.overlay{
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.overlay-slider{
+  background-color: rgba(0, 0, 0, 0.1);
+ 
+}
+.overlay-slider img{
+  position: absolute;
+  right: 0;
+}
+.title{
+  font-size: 180px  ;
+  line-height: 200px  ;
+  font-family: 'Montserrat', sans-serif  ;
+  color: rgba(68, 158, 196,0.8);
+}
+.specialized{
+font-size: 50px;
+color: rgba(68, 158, 196,0.8);
+font-family: 'Poppins', sans-serif;
+font-weight: 800;
+
+}
+.caption{
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+.heading h2 {
+  font-weight: 600;
+  font-size: 120px;
+  line-height: 54px;
+  opacity: 0.1;
+  font-family: "Poppins", sans-serif ;
+
+}
+.heading h3 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+  color: var(--maincolor);
+  transition: all 1s;
+  font-family: "Poppins", sans-serif ;
+
+}
+
+.heading h3::after {
+  content: "";
+  background-color: var(--maincolor);
+  width: 80px;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -50%);
+  transition: all 1s;
+}
+.heading:hover h3{
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  color: var(--maincolor);
+  transition: all 1s;
+}
+.heading:hover h3::after{
+  width: 120px;
+  transition: all 1s;
+
+}
+
+.main_link {
+  color: var(--maincolor) ;
+  font-family: "Poppins", sans-serif ;
+  transition: all 1s ;
+  font-size: 18px !important ;
+}
+.main_link:hover {
+  transition: all 1s;
+  border-bottom: solid 1px var(--maincolor) ;
+
+  color: var(--maincolor) ;
+  font-size: 20px !important;
+}
+.link_color {
+  color: rgb(169, 169, 169) ;
+  font-size: 18px !important ;
+  font-family: "Poppins", sans-serif ;
+  transition: all 1s ;
+}
+.link_color:hover {
+  transition: all 1s;
+  border-bottom: solid 1px var(--maincolor) ;
+
+  color: var(--maincolor) ;
+  font-size: 20px !important;
+}
+.icon{
+    width: 70px;
+    height: 70px;
+    transform: translate(-50%,-50%);
+    color: var(--maincolor);
+    background: #fff;
+    transition: 1s all;
+}
+.card:hover  .icon a{
+   transition: all 1s;
+    color: #fff !important;
+}
+.card:hover  .icon {
+    transition: all 1s;
+     background: var(--maincolor);
+ }
+ .card{
+  background-color: #f8f9fc !important;
+  border: none !important;
+ }
+
+.info_title{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+.info{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(29,29,36,.75);
+    transition: all 1s;
+
+}
+.contact-color{
+  background-color: #f8f9fc !important;
+  margin-top: 48px;
+}
+
+.card a:hover{
+color: var(--maincolor);
+transition: all 1s;
+
+}
+.swiper {
+  margin: 100px auto;
+  width: 100%;
+  height: 500px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.mobile{
+  display: none;
+}
+.headacheSlider:hover .overlay-slider{
+  bottom: 0 !important;
+  top:0 !important;
+
+}  
+@media screen and  (min-width: 1600px ) {
+  .title{
+     max-width: 600px;
+  }
+
+}
+@media screen and (min-width: 1200px  ) and (max-width: 1600px ) {
+  .title{
+      font-size: 150px  ;
+      line-height: 130px  ;
+      max-width: 990px;
+  }
+  .specialized{
+    font-size: 40px;
+ 
+    }
+}
+@media screen and (min-width: 992px  ) and (max-width: 1199px ) {
+  .title{
+      font-size: 140px  ;
+      line-height: 135px  ;
+      max-width: 990px;
+  }
+
+  
+  .specialized{
+    font-size: 30px;
+ 
+    }
+}
+@media screen and (min-width: 768px  ) and (max-width: 991px ) {
+  .title{
+      font-size: 120px  ;
+      line-height: 115px  ;
+      max-width: 850px;
+  }
+  .specialized{
+    font-size: 25px;
+ 
+    }
+    .heading:hover h3{
+      font-size: 45px ;
+      line-height: 60px ;
+    }
+    .appointmentTitle{
+    font-size:80px !important ;
+    }
+  }
+  @media screen and (max-width:767px ) {
+    .title{
+        font-size: 100px  ;
+        line-height: 95px  ;
+    }
+    .specialized{
+      font-size: 25px;
+   
+      }
+      .heading h3{
+        font-size: 30px;
+        line-height: 60px;
+      }
+      .heading h2{
+        font-size: 100px;
+        line-height: 90px;
+      }
+      .heading:hover h3{
+        font-size: 35px;
+        line-height: 60px;
+      }
+      .appointmentTitle{
+        font-size:70px !important ;
+        }
+     
+     
+  }
+
+
+    @media screen and (min-width:300px) and (max-width: 576px) 
+    { 
+
+  .title{
+      font-size: 60px  ;
+      line-height: 70px  ;
+      
+  }
+ 
+  .specialized{
+    font-size: 20px;
+ 
+    }
+   
+    .heading h2{
+      font-size: 75px;
+      line-height: 90px;
+    }
+    .heading h3{
+      font-size: 20px ;
+      line-height: 50px ;
+    }
+    .heading:hover h3{
+      font-size: 22px ;
+      line-height: 50px ;
+    }
+    .headTitle{
+      font-size: 60px !important;
+    }
+    .appointmentTitle{
+      font-size: 45px !important;
+
+    }
+  
+
+    .swiper {
+      margin: 100px auto;
+      width: 300px;
+      height: 350px;
+    }
+
+    .laptop{
+      display: none;
+    }
+
+    .mobile{
+      display: flex;
+    }
+
+    .caption-headache{
+      width: 100% !important;
+    }
+   form{
+    width: 75% !important;
+   }
+    
+  }
+
+
+
+@media screen and (max-width: 992px) {
+  .main_link:hover {
+    border-bottom: none ;
+  }
+  .link_color:hover {
+    border-bottom: none ;
+  }
+  .main_link {
+    text-align: center ;
+  }
+  .link_color {
+    text-align: center ;
+  }
+  .small_logo {
+    display: none !important;
+  }
+}
+
