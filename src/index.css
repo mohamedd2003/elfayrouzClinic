@@ -232,7 +232,7 @@ transition: all 1s;
 @media screen and (min-width: 1200px  ) and (max-width: 1600px ) {
   .title{
       font-size: 150px  ;
-      line-height: 140px  ;
+      line-height: 160px  ;
       max-width: 990px;
   }
   .specialized{
@@ -243,7 +243,7 @@ transition: all 1s;
 @media screen and (min-width: 992px  ) and (max-width: 1199px ) {
   .title{
       font-size: 140px  ;
-      line-height: 145px  ;
+      line-height: 150px  ;
       max-width: 990px;
   }
 
