@@ -1,13 +1,18 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 :root{
   --maincolor:rgba(68, 158, 196,1)
 }
 .main-color{
   color:var(--maincolor) !important;
 }
-
+/* .cursor
+{
+  width: 40px;
+  height: 40px;
+  border: 2px var(--maincolor) solid !important;
+} */
 #home{
   height: 100vh;
   width: 100%;
@@ -65,7 +70,7 @@ transition: all 2s;
 }
 .title{
   font-size: 180px  ;
-  line-height: 220px  ;
+  line-height: 200px  ;
   font-family: 'Montserrat', sans-serif  ;
   color: rgba(68, 158, 196,0.8);
 }
@@ -227,7 +232,7 @@ transition: all 1s;
 @media screen and (min-width: 1200px  ) and (max-width: 1600px ) {
   .title{
       font-size: 150px  ;
-      line-height: 130px  ;
+      line-height: 140px  ;
       max-width: 990px;
   }
   .specialized{
@@ -238,7 +243,7 @@ transition: all 1s;
 @media screen and (min-width: 992px  ) and (max-width: 1199px ) {
   .title{
       font-size: 140px  ;
-      line-height: 135px  ;
+      line-height: 145px  ;
       max-width: 990px;
   }
 
